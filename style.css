@@ -92,6 +92,12 @@
   margin: auto;
 }
 
+.subtitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -239,16 +245,83 @@
 
 .customers {
   padding-top: 30px;
+  padding-bottom: 106px;
 }
 
 .labels {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 75px;
 }
 .labels__img {
   filter: brightness(0);
+}
+
+.features {
+  padding-bottom: 110px;
+}
+
+.features-content {
+  display: flex;
+}
+.features-content__subtitle {
+  margin-bottom: 24px;
+  color: #009b4d;
+}
+.features-content__title {
+  max-width: 462px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+}
+.features-content__description {
+  max-width: 461px;
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 42px;
+}
+.features-content__link {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #3142c6;
+}
+.features-content__link::before {
+  position: relative;
+  top: 4px;
+  content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-compas.png);
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+.features-content__advantage {
+  max-width: 459px;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 10px;
+}
+.features-content__advantage::after {
+  display: block;
+  content: "";
+  border-top: 3px solid #3142c6;
+  margin-top: 18px;
+}
+.features-content__opportunity {
+  display: flex;
+  align-items: center;
+  width: 457px;
+  height: 70px;
+  border-bottom: 1px solid rgba(43, 41, 45, 0.16);
+}
+.features-content__opportunity-img {
+  margin-right: 15px;
+}
+.features-content__img {
+  position: relative;
+  left: 120px;
 }
 
 * {
@@ -271,7 +344,11 @@ ul {
   list-style-type: none;
 }
 
-h3, h1 {
+h3,
+h1,
+h4,
+h2,
+p {
   padding: 0;
   margin: 0;
 }
