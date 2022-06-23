@@ -247,6 +247,9 @@
   align-items: center;
   height: 75px;
 }
+.labels__img {
+  filter: brightness(0);
+}
 
 * {
   box-sizing: border-box;
