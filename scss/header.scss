@@ -11,10 +11,10 @@
   margin-right: 75px;
 
   &__item {
-    color: #2b292d;
     font-size: 18px;
     line-height: 25px;
     margin-right: 50px;
+    color: #2b292d;
 
     &_selected {
       font-weight: 700;
@@ -58,7 +58,6 @@
   &__desctiption {
     font-size: 18px;
     line-height: 25px;
-    color: #2b2920;
     opacity: 0.6;
   }
 }
