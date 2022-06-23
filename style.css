@@ -237,6 +237,17 @@
   margin-bottom: 6px;
 }
 
+.customers {
+  padding-top: 30px;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+}
+
 * {
   box-sizing: border-box;
 }
