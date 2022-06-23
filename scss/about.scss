@@ -1,0 +1,27 @@
+.about {
+  background-color: #F4F5F7;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 255px;
+  align-items: center;
+  
+
+  &__column {
+    width: 555px;
+    font-size: 22px;
+    line-height: 32px;
+    &:first-child {
+      margin-right: 29px;
+    }
+  }
+
+  &__column-title {
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  
+}

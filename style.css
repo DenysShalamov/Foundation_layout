@@ -87,6 +87,11 @@
   font-size: 18px;
 }
 
+.content {
+  width: 1140px;
+  margin: auto;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -207,6 +212,29 @@
 }
 .headline__learn-more-btn {
   margin-left: 10px;
+}
+
+.about {
+  background-color: #F4F5F7;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 255px;
+  align-items: center;
+}
+.about-content__column {
+  width: 555px;
+  font-size: 22px;
+  line-height: 32px;
+}
+.about-content__column:first-child {
+  margin-right: 29px;
+}
+.about-content__column-title {
+  font-weight: 700;
+  margin-bottom: 6px;
 }
 
 * {
