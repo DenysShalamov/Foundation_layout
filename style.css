@@ -264,6 +264,7 @@
 
 .features-content {
   display: flex;
+  position: relative;
 }
 .features-content__subtitle {
   margin-bottom: 24px;
@@ -324,9 +325,9 @@
   left: 120px;
 }
 .features-content__lateral-img {
-  position: relative;
+  position: absolute;
   top: 258px;
-  right: 40px;
+  left: -128px;
 }
 
 * {
