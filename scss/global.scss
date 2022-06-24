@@ -1,8 +1,6 @@
 .page {
-  display: flex;
-  flex-direction: column;
-  // min-width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  
 }
 
 .action-btn {
@@ -37,3 +35,54 @@
   font-size: 22px;
   line-height: 34px;
 }
+
+.logo {
+  display: flex;
+
+  &__img {
+    width: 48px;
+    height: 48px;
+    margin-right: 13px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+
+  
+}
+
+
+
+
+@media screen and (min-width: 400px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .logo {
+
+    &__img {
+      width: 60px;
+      height: 60px;
+    }
+
+    &__desctiption {
+      display: inline;
+      font-size: 18px;
+      line-height: 25px;
+      opacity: 0.6;
+    }
+  }
+}
+  
