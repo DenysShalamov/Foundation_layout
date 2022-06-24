@@ -14,7 +14,12 @@
   margin-left: auto;
   width: 58px;
   height: 64px;
+  border: none;
+  background-color: #fff;
   border-left: 1px solid rgba(0, 0, 0, 0.0823529412);
+}
+.header__hamburger-menu:active .navigation {
+  display: block;
 }
 .header__hamburger-img {
   margin: auto;
@@ -67,6 +72,9 @@
   }
   .header__btn {
     display: block;
+  }
+  .header__hamburger-menu {
+    display: none;
   }
   .top {
     padding-top: 39px;
@@ -230,43 +238,83 @@
 
 .headline {
   display: flex;
-  width: 1140px;
-  margin: auto;
-  margin-bottom: 126px;
-  margin-top: 84px;
-}
-.headline__banner {
-  position: relative;
-  margin-left: auto;
-  top: 8px;
-  right: -109px;
-  width: 796px;
-  height: 448px;
+  flex-direction: column;
 }
 .headline__text {
-  position: absolute;
-  z-index: 1;
+  width: 100%;
+  margin: 35px 15px 33px 15px;
 }
 .headline__title {
-  margin-bottom: 34px;
-  width: 754px;
-  height: 165px;
+  margin-bottom: 24px;
+  width: 290px;
+  height: 205px;
   font-weight: 700;
-  font-size: 80px;
-  line-height: 78px;
-  letter-spacing: -0.5px;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.3125px;
 }
 .headline__description {
-  margin-bottom: 58px;
-  width: 456px;
-  height: 102px;
+  margin-bottom: 24px;
+  width: 290px;
+  height: 172px;
   font-size: 24px;
   line-height: 34px;
+  margin-bottom: 30px;
+}
+.headline__btns {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+}
+.headline__start-btn {
+  width: 100%;
+  margin-bottom: 15px;
 }
 .headline__learn-more-btn {
-  margin-left: 10px;
+  width: 100%;
 }
 
+@media screen and (min-width: 1400px) {
+  .headline {
+    margin-top: 84px;
+    width: 1140px;
+    margin: auto;
+    margin-bottom: 126px;
+  }
+  .headline__text {
+    position: absolute;
+    z-index: 1;
+  }
+  .headline__title {
+    margin-bottom: 34px;
+    width: 754px;
+    height: 165px;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 78px;
+    letter-spacing: -0.5px;
+  }
+  .headline__description {
+    margin-bottom: 58px;
+    width: 456px;
+    height: 102px;
+  }
+  .headline__banner {
+    position: relative;
+    margin-left: auto;
+    top: 42px;
+    right: -123px;
+    width: 796px;
+    height: 448px;
+  }
+  .headline__btns {
+    margin-left: 0;
+    flex-direction: row;
+  }
+  .headline__learn-more-btn {
+    margin-left: 10px;
+  }
+}
 .about {
   background-color: #F4F5F7;
 }

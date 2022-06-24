@@ -1,3 +1,5 @@
+
+
 .header {
   height: 64px;
   width: 100%;
@@ -15,7 +17,15 @@
     margin-left: auto;
     width: 58px;
     height: 64px;
+    border: none;
+    background-color: #fff;
     border-left: 1px solid #00000015;
+
+    &:active {
+      .navigation {
+        display: block;
+      }
+    }
   }
 
   &__hamburger-img {
@@ -76,6 +86,11 @@
     &__btn {
       display: block;
     }
+
+    &__hamburger-menu {
+      display: none;
+    }
+    
   }
 
   .top {
