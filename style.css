@@ -323,6 +323,11 @@
   position: relative;
   left: 120px;
 }
+.features-content__lateral-img {
+  position: relative;
+  top: 258px;
+  right: 40px;
+}
 
 * {
   box-sizing: border-box;
