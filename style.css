@@ -658,13 +658,13 @@
 @media screen and (min-width: 400px) {
   .order-content {
     flex-direction: row;
+    justify-content: space-around;
   }
   .order-content__img-window {
     width: 269px;
     height: 296px;
   }
   .order-content__text {
-    margin-left: auto;
     width: 555px;
   }
   .order-content__title {

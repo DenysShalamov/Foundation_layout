@@ -66,6 +66,7 @@
 @media screen and (min-width: 400px) {
   .order-content {
     flex-direction: row;
+    justify-content: space-around;
 
     &__img-window {
       width: 269px;
@@ -73,7 +74,6 @@
     }
 
     &__text {
-      margin-left: auto;
       width: 555px;
     }
 
