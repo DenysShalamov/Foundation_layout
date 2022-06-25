@@ -5,37 +5,59 @@
   margin-bottom: 0;
 
   &-links {
+    margin-top: 30px;
+    margin-bottom: 22px;
     display: flex;
-    align-items: center;
-    width: 1140px;
-    height: 50px;
-    margin: 0 auto;
+    flex-direction: column;
+
+    padding-left: 15px;
   }
 
   &__line {
+    display: none;
     border-top: 1px solid #2b292d;
     opacity: 0.1;
     margin: 0;
+  }
+
+  &__logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo-img {
+    margin-bottom: 20px;
+  }
+
+  &__logo-text {
+    align-items: center;
+  }
+
+  &__logo-name {
+    margin-bottom: 10px;
   }
 }
 
 .footer-navigation {
   display: flex;
-  width: 1140px;
-  height: 338px;
+  flex-direction: column;
+  width: 100vw;
   margin: 0 auto;
 }
 
 .about-company {
   margin-top: 43px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e3e3e3;
 
   &__description {
-    width: 360px;
-    line-height: 26px;
-    font-size: 18px;
-    margin-top: 26px;
-    margin-bottom: 25px;
-    color: rgba(43, 41, 45, 0.6);
+    display: none;
+  }
+
+  &__downloads-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
   }
 
   &__downloads-img {
@@ -45,8 +67,8 @@
 
 .additional-nav {
   display: flex;
-  margin-top: 60px;
-  margin-left: auto;
+  flex-direction: column;
+  padding-left: 15px;
 
   &__column {
     margin-right: 29px;
@@ -57,11 +79,11 @@
   width: 265px;
 
   &__title {
+    margin-top: 30px;
     margin-bottom: 18px;
     font-weight: 700;
     font-size: 22px;
     line-height: 28px;
-
   }
 
   &__list-item {
@@ -85,9 +107,88 @@
 }
 
 .social-links {
-  margin-left: auto;
-
   &__item {
-    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .footer {
+    &-links {
+      margin: 0 auto;
+      flex-direction: row;
+      align-items: center;
+      width: 1140px;
+      height: 50px;
+    }
+
+    &__line {
+      display: block;
+    }
+
+    &__logo {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    &__logo-text {
+      align-items: flex-start;
+    }
+
+    &__logo-img {
+      margin-bottom: 0;
+    }
+
+    &__logo-name {
+      margin-bottom: 0;
+    }
+  }
+
+  .social-links {
+    margin-left: auto;
+
+    &__item {
+      margin-left: 20px;
+    }
+  }
+
+  .footer-navigation {
+    flex-direction: row;
+    width: 1140px;
+    height: 338px;
+    margin: 0 auto;
+  }
+
+  .about-company {
+    padding-bottom: 0;
+    border-bottom: none;
+
+    &__description {
+      display: block;
+      width: 360px;
+      line-height: 26px;
+      font-size: 18px;
+      margin-top: 26px;
+      margin-bottom: 25px;
+      color: rgba(43, 41, 45, 0.6);
+    }
+
+    &__downloads-links {
+      display: block;
+      margin: 0;
+    }
+  }
+
+  .additional-nav {
+    flex-direction: row;
+    margin-top: 60px;
+    margin-left: auto;
+    padding-left: 0;
+  }
+
+  .nav-links {
+    &__title {
+      margin-top: 0;
+    }
   }
 }
