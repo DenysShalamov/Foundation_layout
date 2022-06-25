@@ -5,6 +5,7 @@
 @import 'about.scss';
 @import 'customers.scss';
 @import 'features.scss';
+@import 'tips.scss';
 
 * {
   box-sizing: border-box;
@@ -37,4 +38,8 @@ p {
 
 body {
   overflow-x: hidden;
+}
+
+figure {
+  margin: 0;
 }
