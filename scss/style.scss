@@ -7,6 +7,7 @@
 @import 'features.scss';
 @import 'tips.scss';
 @import 'order.scss';
+@import 'inbox.scss';
 
 * {
   box-sizing: border-box;
@@ -32,6 +33,7 @@ h3,
 h1,
 h4,
 h2,
+h6,
 p {
   padding: 0;
   margin: 0;
