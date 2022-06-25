@@ -1045,6 +1045,108 @@
     right: 0;
   }
 }
+.hiring {
+  padding: 50px 15px;
+}
+.hiring__text {
+  text-align: center;
+}
+.hiring__title {
+  letter-spacing: -0.357143px;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 18px;
+}
+.hiring__description {
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+.hiring__btn {
+  width: 100%;
+  margin-bottom: 39px;
+}
+.hiring__link {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  height: 140px;
+  width: 290px;
+  border: 1px solid rgba(43, 41, 45, 0.2);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.hiring__link:last-child {
+  margin-bottom: 0;
+}
+.hiring__link:hover {
+  background-color: #3141C5;
+}
+.hiring__link:hover .hiring__link-post,
+.hiring__link:hover .hiring__link-subtitle {
+  color: #fff;
+}
+.hiring__link-arrow {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png);
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #d5d4d5;
+  width: 50px;
+  height: 140px;
+  border-radius: 0 8px 8px 0;
+}
+.hiring__link-post {
+  display: block;
+  width: 200px;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #2b292d;
+  margin-bottom: 7px;
+}
+.hiring__link-subtitle {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2B292D;
+}
+
+@media screen and (min-width: 400px) {
+  .hiring {
+    padding: 106px 0 110px 0;
+  }
+  .hiring__text {
+    max-width: 555px;
+  }
+  .hiring__content-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hiring__link {
+    width: 750px;
+    height: 81px;
+    padding-left: 25px;
+  }
+  .hiring__link-wrap {
+    width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hiring__link-post {
+    flex-grow: 1;
+  }
+  .hiring__link-arrow {
+    height: 100%;
+    background-color: #fff;
+  }
+  .hiring__btn {
+    width: 247px;
+  }
+}
 * {
   box-sizing: border-box;
 }

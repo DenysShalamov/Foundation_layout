@@ -1,0 +1,119 @@
+.hiring {
+  padding: 50px 15px;
+
+  &__text {
+    text-align: center;
+  }
+
+  &__title {
+    letter-spacing: -0.357143px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 18px;
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    width: 100%;
+    margin-bottom: 39px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 140px;
+    width: 290px;
+    border: 1px solid rgba(43, 41, 45, 0.2);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      background-color: #3141C5;
+      
+      .hiring__link-post,
+      .hiring__link-subtitle {
+        color: #fff;
+      }
+    }
+  }
+
+  &__link-arrow {
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png);
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #d5d4d5;
+    width: 50px;
+    height: 140px;
+    border-radius: 0 8px 8px 0;
+  }
+
+  &__link-post {
+    display: block;
+    width: 200px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #2b292d;
+    margin-bottom: 7px;
+  }
+
+  &__link-subtitle {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2B292D;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .hiring {
+    padding: 106px 0 110px 0;
+
+    &__text {
+      max-width: 555px;
+    }
+
+    &__content-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__link {
+      width: 750px;
+      height: 81px;
+      padding-left: 25px;
+    }
+
+    &__link-wrap {
+      width: 650px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    } 
+
+    &__link-post {
+      flex-grow: 1;
+    }
+
+    &__link-arrow {
+      height: 100%;
+      background-color: #fff;
+    }
+
+    &__btn {
+      width: 247px;
+    }
+  }
+}
