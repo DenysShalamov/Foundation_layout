@@ -1,9 +1,6 @@
 .page {
   width: 100%;
-  
 }
-
-
 
 .action-btn {
   background-color: #2040c4;
@@ -38,6 +35,18 @@
   line-height: 34px;
 }
 
+.description {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+}
+
 .logo {
   display: flex;
 
@@ -58,23 +67,18 @@
     line-height: 25px;
     font-weight: 700;
   }
-
-  
 }
 
 .img-description {
   text-align: center;
-  font-size:14px;
-  line-height:22px;
+  font-size: 14px;
+  line-height: 22px;
   color: rgba(43, 41, 45, 0.6);
 }
 
-
-
-
 @media screen and (min-width: 400px) {
   .top {
-    background-color: #F3C6BD;
+    background-color: #f3c6bd;
   }
 
   .content {
@@ -87,7 +91,6 @@
   }
 
   .logo {
-
     &__img {
       width: 60px;
       height: 60px;
@@ -101,4 +104,3 @@
     }
   }
 }
-  

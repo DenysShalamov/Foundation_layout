@@ -111,6 +111,18 @@
   line-height: 34px;
 }
 
+.description {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+}
+
 .logo {
   display: flex;
 }
@@ -139,7 +151,7 @@
 
 @media screen and (min-width: 400px) {
   .top {
-    background-color: #F3C6BD;
+    background-color: #f3c6bd;
   }
   .content {
     width: 1140px;
@@ -342,8 +354,6 @@
   margin-bottom: 24px;
 }
 .headline__description {
-  font-size: 24px;
-  line-height: 34px;
   margin-bottom: 30px;
 }
 .headline__btn {
@@ -500,15 +510,9 @@
   .features-content__title {
     max-width: 462px;
     margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 56px;
-    letter-spacing: -0.5px;
   }
   .features-content__description {
     max-width: 461px;
-    font-size: 24px;
-    line-height: 34px;
     margin-bottom: 42px;
   }
   .features-content__link {
@@ -711,8 +715,6 @@
   margin-bottom: 18px;
 }
 .inbox-content__description {
-  font-size: 24px;
-  line-height: 34px;
   margin-bottom: 60px;
 }
 
@@ -798,8 +800,6 @@
   margin-bottom: 18px;
 }
 .communication-content__description {
-  font-size: 24px;
-  line-height: 34px;
   margin-bottom: 30px;
 }
 .communication-content__btn {
@@ -896,8 +896,6 @@
   margin-bottom: 18px;
 }
 .audience__description {
-  font-size: 24px;
-  line-height: 34px;
   margin-bottom: 30px;
 }
 .audience__btn {
@@ -995,6 +993,7 @@
 }
 .slider__text {
   font-size: 24px;
+  line-height: 34px;
   margin-bottom: 32px;
 }
 
@@ -1058,8 +1057,6 @@
   margin-bottom: 18px;
 }
 .hiring__description {
-  font-size: 24px;
-  line-height: 34px;
   margin-bottom: 30px;
 }
 .hiring__btn {
