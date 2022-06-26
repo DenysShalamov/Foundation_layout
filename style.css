@@ -161,47 +161,54 @@
   }
 }
 .footer {
-  display: flex;
-  flex-direction: column;
-  margin-top: auto;
-  margin-bottom: 0;
-}
-.footer-links {
-  margin-top: 30px;
-  margin-bottom: 22px;
-  display: flex;
-  flex-direction: column;
-  padding-left: 15px;
-}
-.footer__line {
-  display: none;
-  border-top: 1px solid #2b292d;
-  opacity: 0.1;
-  margin: 0;
+  padding: 40px 0 22px 0;
 }
 .footer__logo {
   flex-direction: column;
   align-items: center;
+  margin-bottom: 31px;
 }
-.footer__logo-img {
+.footer__log-img {
+  margin-right: 0;
   margin-bottom: 20px;
+  width: 60px;
+  height: 60px;
 }
 .footer__logo-text {
-  align-items: center;
+  text-align: center;
 }
 .footer__logo-name {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
-
-.footer-navigation {
+.footer__logo-description {
+  font-size: 18px;
+  line-height: 25px;
+  opacity: 0.6;
+}
+.footer__line {
+  display: none;
+}
+.footer__links {
+  margin: 0 15px;
+}
+.footer__links-terms {
   display: flex;
-  flex-direction: column;
-  width: 100vw;
-  margin: 0 auto;
+  justify-content: space-between;
+  width: 180px;
+  margin-bottom: 31px;
+}
+.footer__terms-link {
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(43, 41, 45, 0.6);
+}
+.footer__links-social {
+  display: flex;
+  width: 97px;
+  justify-content: space-between;
 }
 
 .about-company {
-  margin-top: 43px;
   padding-bottom: 40px;
   border-bottom: 1px solid #e3e3e3;
 }
@@ -209,115 +216,119 @@
   display: none;
 }
 .about-company__downloads-links {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
+  text-align: center;
 }
-.about-company__downloads-img {
-  margin-right: 10px;
+.about-company__downloads-link {
+  display: inline-block;
+  height: 40px;
 }
-
-.additional-nav {
-  display: flex;
-  flex-direction: column;
-  padding-left: 15px;
-}
-.additional-nav__column {
-  margin-right: 29px;
+.about-company__downloads-link:first-child {
+  margin-right: 5px;
 }
 
-.nav-links {
-  width: 265px;
+.footer-nav {
+  padding: 30px 15px 0 15px;
 }
-.nav-links__title {
-  margin-top: 30px;
-  margin-bottom: 18px;
-  font-weight: 700;
+.footer-nav__column {
+  margin-bottom: 30px;
+}
+.footer-nav__title {
   font-size: 22px;
   line-height: 28px;
+  margin-bottom: 18px;
 }
-.nav-links__list-item {
+.footer-nav__list-link {
+  display: inline-block;
+  width: 100%;
   font-size: 18px;
   line-height: 30px;
-}
-.nav-links__list-link {
   color: rgba(43, 41, 45, 0.6);
+  cursor: pointer;
 }
 
-.terms {
-  line-height: 50px;
+.social-link-icon__twitter, .social-link-icon__facebook, .social-link-icon__linkedin {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.terms__item {
-  color: rgba(43, 41, 45, 0.6);
-  font-size: 14px;
-  margin-right: 22px;
+.social-link-icon__facebook, .social-link-icon__linkedin {
+  width: 18px;
+  height: 17px;
 }
-
-.social-links__item {
-  margin-right: 20px;
+.social-link-icon__twitter {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png);
+  width: 27px;
+  height: 16px;
+}
+.social-link-icon__facebook {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png);
+}
+.social-link-icon__linkedin {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png);
 }
 
 @media screen and (min-width: 400px) {
-  .footer-links {
-    margin: 0 auto;
-    flex-direction: row;
-    align-items: center;
-    width: 1140px;
-    height: 50px;
+  .footer {
+    padding: 0;
   }
-  .footer__line {
-    display: block;
+  .footer__top {
+    display: flex;
+    margin-bottom: 59px;
   }
   .footer__logo {
     flex-direction: row;
     align-items: flex-start;
+    margin-bottom: 26px;
+    height: 60px;
   }
   .footer__logo-text {
-    align-items: flex-start;
+    text-align: left;
   }
-  .footer__logo-img {
-    margin-bottom: 0;
+  .footer__line {
+    display: block;
+    margin-bottom: 13px;
+    border-bottom: 1px solid #2B292D;
+    opacity: 0.1;
+    width: 100vw;
   }
-  .footer__logo-name {
-    margin-bottom: 0;
-  }
-  .social-links {
-    margin-left: auto;
-  }
-  .social-links__item {
-    margin-left: 20px;
-  }
-  .footer-navigation {
-    flex-direction: row;
-    width: 1140px;
-    height: 338px;
-    margin: 0 auto;
+  .footer__links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 22px;
+    margin: 0;
+    margin-bottom: 15px;
   }
   .about-company {
+    margin-top: 43px;
     padding-bottom: 0;
-    border-bottom: none;
+    width: 360px;
+    border: none;
   }
   .about-company__description {
-    display: block;
-    width: 360px;
-    line-height: 26px;
-    font-size: 18px;
-    margin-top: 26px;
+    display: inline-block;
     margin-bottom: 25px;
-    color: rgba(43, 41, 45, 0.6);
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.6;
   }
   .about-company__downloads-links {
-    display: block;
-    margin: 0;
+    text-align: left;
   }
-  .additional-nav {
-    flex-direction: row;
-    margin-top: 60px;
+  .footer-nav {
+    display: flex;
     margin-left: auto;
-    padding-left: 0;
+    margin-top: 60px;
+    width: 559px;
+    padding: 0;
   }
-  .nav-links__title {
-    margin-top: 0;
+  .footer-nav__column {
+    width: 265px;
+    margin-left: 29px;
+    margin-bottom: 0;
+  }
+  .footer-nav__column:first-child {
+    margin-left: 0;
   }
 }
 .headline {
