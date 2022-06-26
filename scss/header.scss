@@ -1,35 +1,37 @@
-
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  margin-left: 15px;
+}
 
 .header {
-  height: 64px;
-  width: 100%;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  padding-left: 15px;
-
+  
   &__btn {
     display: none;
   }
 
-  &__hamburger-menu {
-    display: flex;
-    margin-left: auto;
-    width: 58px;
-    height: 64px;
-    border: none;
-    background-color: #fff;
-    border-left: 1px solid #00000015;
+  &__logo-description {
+    display: none;
+  }
 
-    &:active {
-      .navigation {
-        display: block;
-      }
-    }
+  &__logo {
+    align-items: center;
+  }
+
+  &__hamburger-menu {
+    width: 58px;
+    border: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    text-align: center;
   }
 
   &__hamburger-img {
-    margin: auto;
+    display: inline-block;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
+    width: 18px;
+    height: 13px;
   }
 }
 
@@ -37,63 +39,53 @@
   display: none;
 }
 
-.header-logo__description {
-  display: none;
-}
-
-.top {
-  background-color: #f3c6bd;
-}
-
 @media screen and (min-width: 400px) {
+  .header-content {
+    height: 62px;
+  }
+  .header {
+    margin-top: 39px;
+
+    &__hamburger-menu {
+      display: none;
+    }
+
+    &__btn {
+      display: block;
+      margin-left: 56px;
+    }
+
+    &__logo-description {
+      display: block;
+    }
+  }
+
   .navigation {
-    display: block;
+    display: flex;
     margin-left: auto;
-    margin-top: 7px;
-    margin-right: 75px;
+    align-items: center;
 
     &__item {
+      padding: 0 25px;
       font-size: 18px;
       line-height: 25px;
-      margin-right: 50px;
-      color: #2b292d;
+      color: #2B292D;
 
       &_selected {
         font-weight: 700;
-      }
-
-      &:last-child {
-        margin-right: 0;
       }
     }
 
     &__arrow {
       display: inline-block;
       background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
-      height: 5px;
+      background-repeat: no-repeat;
+      background-position: center;
       width: 8px;
+      height: 5px;
       margin-left: 11px;
+      margin-bottom: 3px;
+     
     }
-  }
-
-  .header {
-    display: flex;
-    width: 1140px;
-    height: 62px;
-    margin: auto;
-    background-color: #f3c6bd;
-
-    &__btn {
-      display: block;
-    }
-
-    &__hamburger-menu {
-      display: none;
-    }
-    
-  }
-
-  .top {
-    padding-top: 39px;
   }
 }

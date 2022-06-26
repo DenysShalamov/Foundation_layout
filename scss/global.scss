@@ -3,6 +3,8 @@
   
 }
 
+
+
 .action-btn {
   background-color: #2040c4;
   color: #fff;
@@ -71,6 +73,10 @@
 
 
 @media screen and (min-width: 400px) {
+  .top {
+    background-color: #F3C6BD;
+  }
+
   .content {
     width: 1140px;
   }
