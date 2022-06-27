@@ -54,19 +54,22 @@
 .slider-dots {
   text-align: center;
   margin-bottom: 40px;
+
   &__dot {
     display: inline-block;
     margin-right: 19px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #2b292d;
+    background-color: $dots-color;
     opacity: 0.2;
+    cursor: pointer;
     &:last-child {
       margin-right: 0;
     }
 
-    &_active {
+    &_active,
+    &:hover {
       opacity: 1;
       background-color: #3142c5;
     }

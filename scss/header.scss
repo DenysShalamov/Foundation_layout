@@ -58,7 +58,7 @@
 
 .navigation {
   display: none;
-  
+
   @include for-large {
     display: flex;
     margin-left: auto;
@@ -71,11 +71,13 @@
       font-size: 18px;
       line-height: 25px;
       color: #2b292d;
+      cursor: pointer;
+    }
 
-      &_selected {
-        @include for-large {
-          font-weight: 700;
-        }
+    &_selected,
+    &:hover {
+      @include for-large {
+        font-weight: 700;
       }
     }
   }

@@ -1,6 +1,6 @@
 .inbox {
   padding: 50px 15px;
-  background-color: #fcf0e3;
+  background-color: $inbox-bg;
 
   @include for-large {
     padding-top: 140px;

@@ -1,5 +1,5 @@
 .order {
-  background-color: #F4F5F7;
+  background-color: $order-bg;
   padding: 50px 15px 50px 15px;
   @include for-large {
     padding: 73px 0 72px;

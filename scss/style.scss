@@ -5,8 +5,8 @@
 }
 
 html {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 16px;
+  font-family: $font-family;
+  font-size: $font-size;
   color: $text-color;
 }
 
@@ -44,25 +44,34 @@ figure {
 }
 
 .action-btn {
-  background-color: #2040c4;
-  color: #fff;
+  background-color: $btn-color-action;
+  color: $btn-color-about;
   width: 160px;
   height: 48px;
   font-size: 18px;
   font-weight: 700;
   border: none;
   border-radius: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $action-bg-hover;
+  }
 }
 
 .about-btn {
   width: 158px;
   height: 48px;
-  color: #3040c4;
-  background-color: #fff;
+  color: $btn-color-action;
+  background-color: $btn-color-about;
   border: none;
   border-radius: 2px;
   font-weight: 700;
   font-size: 18px;
+  cursor: pointer;
+  &:hover {
+    background-color: $about-bg-hover;
+  }
 }
 
 .page {
@@ -102,7 +111,9 @@ figure {
 
 .logo {
   display: flex;
-
+  &__link {
+    cursor: pointer;
+  }
   &__img {
     width: 48px;
     height: 48px;
