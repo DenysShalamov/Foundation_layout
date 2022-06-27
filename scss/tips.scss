@@ -5,40 +5,39 @@
 }
 .tips-content {
   padding: 40px 15px 40px 15px;
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid #e3e3e3;
   &:last-child {
     border: none;
     padding-bottom: 50px;
   }
 
   &__subtitle {
-    color: #009B4D;
+    color: #009b4d;
     margin-bottom: 17px;
   }
 
   &__title {
     font-size: 40px;
-  line-height:40px;
-  letter-spacing:-0.36px;
-  margin-bottom: 15px;
+    line-height: 40px;
+    letter-spacing: -0.36px;
+    margin-bottom: 15px;
   }
 
   &__description {
-    font-size:24px;
+    font-size: 24px;
     line-height: 34px;
     margin-bottom: 30px;
   }
 
   &__img {
     margin: auto;
-    
   }
 
   &__img-description {
     margin-top: 20px;
     text-align: center;
     font-size: 14px;
-    line-height:22px;
+    line-height: 22px;
     color: rgba(43, 41, 45, 0.6);
   }
 }

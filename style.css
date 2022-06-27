@@ -708,14 +708,14 @@ figure {
 
 .tips-content {
   padding: 40px 15px 40px 15px;
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid #e3e3e3;
 }
 .tips-content:last-child {
   border: none;
   padding-bottom: 50px;
 }
 .tips-content__subtitle {
-  color: #009B4D;
+  color: #009b4d;
   margin-bottom: 17px;
 }
 .tips-content__title {
