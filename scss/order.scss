@@ -1,12 +1,13 @@
 .order {
   background-color: #F4F5F7;
+  padding: 50px 15px 50px 15px;
 }
 
 .order-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 15px 50px 15px;
+  
 
   &__img {
     margin-bottom: 40px;
@@ -64,6 +65,9 @@
 }
 
 @media screen and (min-width: 1000px) {
+  .order {
+    padding: 73px 0 72px;
+  }
   .order-content {
     flex-direction: row;
     justify-content: space-around;

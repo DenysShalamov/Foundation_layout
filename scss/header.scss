@@ -6,7 +6,6 @@
 }
 
 .header {
-  
   &__btn {
     display: none;
   }
@@ -44,7 +43,8 @@
     height: 62px;
   }
   .header {
-    margin-top: 39px;
+    padding-top: 39px;
+    background-color: $top-color;
 
     &__hamburger-menu {
       display: none;

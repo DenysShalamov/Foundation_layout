@@ -139,13 +139,22 @@
 
     &__logo {
       flex-direction: row;
-      align-items: flex-start;
+      align-items:flex-start;
       margin-bottom: 26px;
       height: 60px;
     }
 
+    &__logo-img {
+      margin-bottom: 0;
+    }
+
     &__logo-text {
       text-align: left;
+      margin-left: 15px;
+    }
+
+    &__logo-name {
+      margin-bottom: 0;
     }
 
     &__line {

@@ -74,9 +74,6 @@
 }
 
 @media screen and (min-width: 1000px) {
-  .top {
-    background-color: #F3C6BD;
-  }
   .content {
     width: 1140px;
   }
@@ -135,7 +132,8 @@
     height: 62px;
   }
   .header {
-    margin-top: 39px;
+    padding-top: 39px;
+    background-color: #F3C6BD;
   }
   .header__hamburger-menu {
     display: none;
@@ -293,8 +291,15 @@
     margin-bottom: 26px;
     height: 60px;
   }
+  .footer__logo-img {
+    margin-bottom: 0;
+  }
   .footer__logo-text {
     text-align: left;
+    margin-left: 15px;
+  }
+  .footer__logo-name {
+    margin-bottom: 0;
   }
   .footer__line {
     display: block;
@@ -605,13 +610,13 @@
 }
 .order {
   background-color: #F4F5F7;
+  padding: 50px 15px 50px 15px;
 }
 
 .order-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 15px 50px 15px;
 }
 .order-content__img {
   margin-bottom: 40px;
@@ -660,6 +665,9 @@
 }
 
 @media screen and (min-width: 1000px) {
+  .order {
+    padding: 73px 0 72px;
+  }
   .order-content {
     flex-direction: row;
     justify-content: space-around;
@@ -887,7 +895,8 @@
   padding: 50px 15px;
 }
 .audience__text {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 .audience__subtitle {
   line-height: 34px;
@@ -905,6 +914,9 @@
   width: 100%;
   margin-bottom: 12px;
 }
+.audience__btn_lern {
+  color: #000;
+}
 .audience__lnks {
   display: flex;
   flex-wrap: wrap;
@@ -919,7 +931,7 @@
   line-height: 28px;
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
 .audience__link:hover {
   background-color: #3141c5;
