@@ -162,6 +162,9 @@ figure {
   }
 }
 
+.header {
+  width: 100%;
+}
 @media screen and (min-width: 1000px) {
   .header {
     padding-top: 39px;

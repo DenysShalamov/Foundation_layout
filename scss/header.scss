@@ -10,6 +10,7 @@
 }
 
 .header {
+  width: 100%;
   @include for-large {
     padding-top: 39px;
     background-color: $top-color;
