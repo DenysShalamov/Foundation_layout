@@ -1,3 +1,8 @@
+.tips {
+  @include for-large {
+    display: none;
+  }
+}
 .tips-content {
   padding: 40px 15px 40px 15px;
   border-bottom: 1px solid #E3E3E3;
@@ -35,11 +40,5 @@
     font-size: 14px;
     line-height:22px;
     color: rgba(43, 41, 45, 0.6);
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .tips {
-    display: none;
   }
 }

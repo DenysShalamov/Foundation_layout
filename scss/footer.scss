@@ -1,10 +1,24 @@
 .footer {
   padding: 40px 0 22px 0;
+  @include for-large {
+    padding: 0;
+  }
+
+  &__top {
+    display: flex;
+    margin-bottom: 59px;
+  }
 
   &__logo {
     flex-direction: column;
     align-items: center;
     margin-bottom: 31px;
+    @include for-large {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 26px;
+      height: 60px;
+    }
   }
 
   &__log-img {
@@ -12,14 +26,24 @@
     margin-bottom: 20px;
     width: 60px;
     height: 60px;
+    @include for-large {
+      margin-bottom: 0;
+    }
   }
 
   &__logo-text {
     text-align: center;
+    @include for-large {
+      text-align: left;
+      margin-left: 15px;
+    }
   }
 
   &__logo-name {
     margin-bottom: 5px;
+    @include for-large {
+      margin-bottom: 0;
+    }
   }
 
   &__logo-description {
@@ -30,10 +54,25 @@
 
   &__line {
     display: none;
+    @include for-large {
+      display: block;
+      margin-bottom: 13px;
+      border-bottom: 1px solid #2b292d;
+      opacity: 0.1;
+      width: 100vw;
+    }
   }
 
   &__links {
     margin: 0 15px;
+    @include for-large {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 22px;
+      margin: 0;
+      margin-bottom: 15px;
+    }
   }
 
   &__links-terms {
@@ -59,12 +98,28 @@
 .about-company {
   padding-bottom: 40px;
   border-bottom: 1px solid #e3e3e3;
+  @include for-large {
+    margin-top: 43px;
+    padding-bottom: 0;
+    width: 360px;
+    border: none;
+  }
   &__description {
     display: none;
+    @include for-large {
+      display: inline-block;
+      margin-bottom: 25px;
+      font-size: 18px;
+      line-height: 26px;
+      opacity: 0.6;
+    }
   }
 
   &__downloads-links {
     text-align: center;
+    @include for-large {
+      text-align: left;
+    }
   }
 
   &__downloads-link {
@@ -78,9 +133,26 @@
 
 .footer-nav {
   padding: 30px 15px 0 15px;
+  @include for-large {
+    display: flex;
+    margin-left: auto;
+    margin-top: 60px;
+    width: 559px;
+    padding: 0;
+  }
 
   &__column {
     margin-bottom: 30px;
+    @include for-large {
+      width: 265px;
+      margin-left: 29px;
+      margin-bottom: 0;
+    }
+    &:first-child {
+      @include for-large {
+        margin-left: 0;
+      }
+    }
   }
 
   &__title {
@@ -126,90 +198,5 @@
 
   &__linkedin {
     background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png);
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .footer {
-    padding: 0;
-    &__top {
-      display: flex;
-      margin-bottom: 59px;
-    }
-
-    &__logo {
-      flex-direction: row;
-      align-items:flex-start;
-      margin-bottom: 26px;
-      height: 60px;
-    }
-
-    &__logo-img {
-      margin-bottom: 0;
-    }
-
-    &__logo-text {
-      text-align: left;
-      margin-left: 15px;
-    }
-
-    &__logo-name {
-      margin-bottom: 0;
-    }
-
-    &__line {
-      display: block;
-      margin-bottom: 13px;
-      border-bottom: 1px solid #2B292D;
-      opacity: 0.1;
-      width: 100vw;
-    }
-
-    &__links {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      height: 22px;
-      margin: 0;
-      margin-bottom: 15px;
-    }
-  }
-
-  .about-company {
-    margin-top: 43px;
-    padding-bottom: 0;
-    width: 360px;
-    border: none;
-
-    &__description {
-      display: inline-block;
-      margin-bottom: 25px;
-      font-size: 18px;
-      line-height: 26px;
-      opacity: .6;
-    }
-
-    &__downloads-links {
-      text-align:left;
-    }
-  }
-
-  .footer-nav {
-    display: flex;
-    margin-left: auto;
-    margin-top: 60px;
-    width: 559px;
-    padding: 0;
-
-    &__column {
-      width: 265px;
-      margin-left: 29px;
-      margin-bottom: 0;
-
-      &:first-child{
-        margin-left: 0;
-      }
-      
-    }
   }
 }

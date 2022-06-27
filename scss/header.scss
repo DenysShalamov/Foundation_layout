@@ -3,15 +3,33 @@
   justify-content: space-between;
   height: 64px;
   margin-left: 15px;
+
+  @include for-large {
+    height: 62px;
+  }
 }
 
 .header {
+  @include for-large {
+    padding-top: 39px;
+    background-color: $top-color;
+  }
+
   &__btn {
     display: none;
+
+    @include for-large {
+      display: block;
+      margin-left: 56px;
+    }
   }
 
   &__logo-description {
     display: none;
+
+    @include for-large {
+      display: block;
+    }
   }
 
   &__logo {
@@ -24,6 +42,10 @@
     border-left: 1px solid rgba(0, 0, 0, 0.15);
     background-color: #fff;
     text-align: center;
+
+    @include for-large {
+      display: none;
+    }
   }
 
   &__hamburger-img {
@@ -36,47 +58,30 @@
 
 .navigation {
   display: none;
-}
-
-@media screen and (min-width: 1000px) {
-  .header-content {
-    height: 62px;
-  }
-  .header {
-    padding-top: 39px;
-    background-color: $top-color;
-
-    &__hamburger-menu {
-      display: none;
-    }
-
-    &__btn {
-      display: block;
-      margin-left: 56px;
-    }
-
-    &__logo-description {
-      display: block;
-    }
-  }
-
-  .navigation {
+  
+  @include for-large {
     display: flex;
     margin-left: auto;
     align-items: center;
+  }
 
-    &__item {
+  &__item {
+    @include for-large {
       padding: 0 25px;
       font-size: 18px;
       line-height: 25px;
-      color: #2B292D;
+      color: #2b292d;
 
       &_selected {
-        font-weight: 700;
+        @include for-large {
+          font-weight: 700;
+        }
       }
     }
+  }
 
-    &__arrow {
+  &__arrow {
+    @include for-large {
       display: inline-block;
       background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
       background-repeat: no-repeat;
@@ -85,7 +90,6 @@
       height: 5px;
       margin-left: 11px;
       margin-bottom: 3px;
-     
     }
   }
 }

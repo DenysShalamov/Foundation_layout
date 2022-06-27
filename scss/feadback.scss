@@ -1,21 +1,50 @@
 .feadback {
   padding: 0 15px 50px 15px;
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid #e3e3e3;
+  @include for-large {
+    padding-bottom: 68px;
+    position: relative;
+  }
 
   &__subtitle {
-    color: #3142C6;
+    color: #3142c6;
     margin-bottom: 29px;
+  }
+
+  &__img {
+    @include for-large {
+      position: absolute;
+      top: 112px;
+      right: 0;
+    }
   }
 }
 
 .slider {
   margin-bottom: 40px;
+  @include for-large {
+    text-align: center;
+  }
   &__quote {
     padding: 0;
     border: none;
+    @include for-large {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
+  &__quote-autor {
+    @include for-large {
+      width: 225px;
+      display: block;
+    }
+  }
   &__text {
+    @include for-large {
+      max-width: 750px;
+    }
     font-size: 24px;
     line-height: 34px;
     margin-bottom: 32px;
@@ -31,7 +60,7 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #2B292D;
+    background-color: #2b292d;
     opacity: 0.2;
     &:last-child {
       margin-right: 0;
@@ -39,38 +68,7 @@
 
     &_active {
       opacity: 1;
-      background-color: #3142C5;
-    }
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .slider {
-    text-align: center;
-
-    &__text {
-      max-width: 750px;
-    }
-
-    &__quote-autor {
-      width: 225px;
-      display: block;
-    } 
-
-    &__quote {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-  .feadback {
-    padding-bottom: 68px;
-    position: relative;
-    &__img {
-      position: absolute;
-      top: 112px;
-      right: 0;
+      background-color: #3142c5;
     }
   }
 }

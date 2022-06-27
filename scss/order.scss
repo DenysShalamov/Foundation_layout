@@ -1,12 +1,19 @@
 .order {
   background-color: #F4F5F7;
   padding: 50px 15px 50px 15px;
+  @include for-large {
+    padding: 73px 0 72px;
+  }
 }
 
 .order-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include for-large {
+    flex-direction: row;
+    justify-content: space-around;
+  }
   
 
   &__img {
@@ -16,6 +23,16 @@
   &__img-window {
     width: 200px;
     height: 200px;
+    @include for-large {
+      width: 269px;
+      height: 296px;
+    }
+  }
+
+  &__text {
+    @include for-large {
+      width: 555px;
+    }
   }
 
   &__title {
@@ -24,17 +41,27 @@
     line-height: 40px;
     letter-spacing: -.25px;
     text-align: center;
+    @include for-large {
+      text-align: left;
+      margin-bottom: 12px;
+    }
   }
 
   &__description {
     margin-bottom: 40px;
     font-size: 22px;
     line-height: 32px;
+    @include for-large {
+      margin-bottom: 26px;
+    }
   }
 
   &__form {
     text-align: center;
     margin-bottom: 10px;
+    @include for-large {
+      text-align:left;
+    }
   }
 
   &__input-email {
@@ -42,6 +69,11 @@
     height: 48px;
     margin-bottom: 12px;
     border: 1px solid rgba(43, 41, 45, 0.2);
+    @include for-large {
+      display: inline-block;
+      width: 385px;
+      margin: 0;
+    }
     &::-webkit-input-placeholder {
       text-align: center;
       color: #2B292D;
@@ -50,6 +82,9 @@
 
   &__btn {
     width: 100%;
+    @include for-large {
+      width: 160px;
+    }
   }
 
   &__form-description {
@@ -61,47 +96,5 @@
   &__link {
     color: rgba(49, 66, 198, 1);
     text-decoration: underline;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .order {
-    padding: 73px 0 72px;
-  }
-  .order-content {
-    flex-direction: row;
-    justify-content: space-around;
-
-    &__img-window {
-      width: 269px;
-      height: 296px;
-    }
-
-    &__text {
-      width: 555px;
-    }
-
-    &__title {
-      text-align: left;
-      margin-bottom: 12px;
-    }
-
-    &__description {
-      margin-bottom: 26px;
-    }
-
-    &__form {
-      text-align:left;
-    } 
-
-    &__input-email {
-      display: inline-block;
-      width: 385px;
-      margin: 0;
-    }
-
-    &__btn {
-      width: 160px;
-    }
   }
 }

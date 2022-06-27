@@ -1,8 +1,22 @@
 .hiring {
   padding: 50px 15px;
+  @include for-large {
+    padding: 106px 0 110px 0;
+  }
 
   &__text {
     text-align: center;
+    @include for-large {
+      max-width: 555px;
+    }
+  }
+
+  &__content-wrap {
+    @include for-large {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__title {
@@ -19,6 +33,9 @@
   &__btn {
     width: 100%;
     margin-bottom: 39px;
+    @include for-large {
+      width: 247px;
+    }
   }
 
   &__link {
@@ -31,17 +48,31 @@
     border-radius: 8px;
     margin-bottom: 15px;
     cursor: pointer;
+    @include for-large {
+      width: 750px;
+      height: 81px;
+      padding-left: 25px;
+    }
 
     &:last-child {
       margin-bottom: 0;
     }
     &:hover {
-      background-color: #3141C5;
-      
+      background-color: #3141c5;
+
       .hiring__link-post,
       .hiring__link-subtitle {
         color: #fff;
       }
+    }
+  }
+
+  &__link-wrap {
+    @include for-large {
+      width: 650px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 
@@ -54,6 +85,10 @@
     width: 50px;
     height: 140px;
     border-radius: 0 8px 8px 0;
+    @include for-large {
+      height: 100%;
+      background-color: #fff;
+    }
   }
 
   &__link-post {
@@ -64,54 +99,15 @@
     font-weight: 700;
     color: #2b292d;
     margin-bottom: 7px;
+    @include for-large {
+      flex-grow: 1;
+    }
   }
 
   &__link-subtitle {
     display: block;
     font-size: 16px;
     line-height: 22px;
-    color: #2B292D;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .hiring {
-    padding: 106px 0 110px 0;
-
-    &__text {
-      max-width: 555px;
-    }
-
-    &__content-wrap {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    &__link {
-      width: 750px;
-      height: 81px;
-      padding-left: 25px;
-    }
-
-    &__link-wrap {
-      width: 650px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    } 
-
-    &__link-post {
-      flex-grow: 1;
-    }
-
-    &__link-arrow {
-      height: 100%;
-      background-color: #fff;
-    }
-
-    &__btn {
-      width: 247px;
-    }
+    color: #2b292d;
   }
 }

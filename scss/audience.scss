@@ -1,32 +1,69 @@
+.adience-wrap {
+  @include for-large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .audience {
   background-color: rgba(0, 161, 198, 0.07);
   padding: 50px 15px;
+  @include for-large {
+    padding: 108px 0 110px 0;
+  }
 
   &__text {
     margin-bottom: 40px;
     text-align: center;
+    @include for-large {
+      width: 555px;
+      text-align: center;
+      margin-bottom: 111px;
+    }
   }
 
   &__subtitle {
     line-height: 34px;
     margin-bottom: 17px;
+    @include for-large {
+      margin-bottom: 24px;
+    }
   }
 
   &__tittle {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 18px;
+    @include for-large {
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+      margin-bottom: 30px;
+    }
   }
 
   &__description {
     margin-bottom: 30px;
+    @include for-large {
+      margin-bottom: 34px;
+    }
   }
 
   &__btn {
     width: 100%;
     margin-bottom: 12px;
+    @include for-large {
+      width: 160px;
+      margin: 0;
+    }
 
-    &_lern {
+    &:first-child {
+      @include for-large {
+        margin-right: 10px;
+      }
+    }
+
+    &:last-child {
       color: #000;
     }
   }
@@ -47,6 +84,16 @@
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    @include for-large {
+      width: 262px;
+      margin-right: 30px;
+    }
+
+    &:last-child {
+      @include for-large {
+        margin-right: 0;
+      }
+    }
 
     &:hover {
       background-color: #3141c5;
@@ -65,54 +112,5 @@
     font-size: 22px;
     line-height: 28px;
     color: $text-color;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .adience-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .audience {
-    padding: 108px 0 110px 0;
-    &__text {
-      width: 555px;
-      text-align: center;
-      margin-bottom: 111px;
-    }
-
-    &__subtitle {
-      margin-bottom: 24px;
-    }
-
-    &__tittle {
-      font-size: 56px;
-      line-height: 56px;
-      letter-spacing: -0.5px;
-      margin-bottom: 30px;
-    }
-
-    &__description {
-      margin-bottom: 34px;
-    }
-
-    &__btn {
-      width: 160px;
-      margin: 0;
-      &:first-child {
-        
-        margin-right: 10px;
-      }
-    }
-
-    &__link {
-      width: 262px;
-      margin-right: 30px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
   }
 }

@@ -1,84 +1,105 @@
 .features {
   display: none;
-}
 
-@media screen and (min-width: 1000px) {
-  .features {
+  @include for-large {
     display: block;
     padding-bottom: 110px;
   }
-  
-  .features-content {
+}
+
+.features-content {
+  @include for-large {
     display: flex;
     position: relative;
-  
-    &__subtitle {
+  }
+
+  &__subtitle {
+    @include for-large {
       margin-bottom: 24px;
       color: #009b4d;
     }
-  
-    &__title {
+  }
+
+  &__title {
+    @include for-large {
       max-width: 462px;
       margin-bottom: 30px;
     }
-  
-    &__description {
+  }
+
+  &__description {
+    @include for-large {
       max-width: 461px;
       margin-bottom: 42px;
     }
-  
-    &__link {
+  }
+
+  &__link {
+    @include for-large {
       font-weight: 700;
       font-size: 22px;
       line-height: 26px;
       color: #3142c6;
-  
-      &::before {
+    }
+
+    &::before {
+      @include for-large {
         position: relative;
         top: 4px;
         content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-compas.png);
         width: 24px;
         height: 24px;
-  
         margin-right: 15px;
       }
     }
-  
-    &__advantage {
+  }
+
+  &__advantage {
+    @include for-large {
       max-width: 459px;
       font-size: 18px;
       line-height: 26px;
       margin-top: 10px;
-      &::after {
+    }
+
+    &::after {
+      @include for-large {
         display: block;
         content: '';
         border-top: 3px solid #3142c6;
         margin-top: 18px;
       }
     }
-  
-    &__opportunity {
+  }
+
+  &__opportunity {
+    @include for-large {
       display: flex;
       align-items: center;
       width: 457px;
       height: 70px;
       border-bottom: 1px solid rgba(43, 41, 45, 0.16);
     }
-  
-    &__opportunity-img {
+  }
+
+  &__opportunity-img {
+    @include for-large {
       margin-right: 15px;
-    } 
-  
-    &__img {
+    }
+  }
+
+  &__img {
+    @include for-large {
       position: relative;
       left: 120px;
     }
-  
-    &__lateral-img {
+  }
+
+  &__lateral-img {
+    @include for-large {
       position: absolute;
       top: 258px;
       left: -128px;
     }
-  
   }
 }
