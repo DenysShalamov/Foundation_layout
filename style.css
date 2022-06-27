@@ -53,7 +53,7 @@ figure {
   cursor: pointer;
 }
 .action-btn:hover {
-  background-color: rgb(1, 137, 209);
+  background-color: #0c58d3;
 }
 
 .about-btn {
