@@ -74,8 +74,10 @@
       cursor: pointer;
     }
 
-    &_selected,
     &:hover {
+      text-decoration: underline;
+    }
+    &_selected {
       @include for-large {
         font-weight: 700;
       }

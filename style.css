@@ -226,8 +226,11 @@ figure {
     cursor: pointer;
   }
 }
+.navigation__item:hover {
+  text-decoration: underline;
+}
 @media screen and (min-width: 1000px) {
-  .navigation__item_selected, .navigation__item:hover {
+  .navigation__item_selected {
     font-weight: 700;
   }
 }
