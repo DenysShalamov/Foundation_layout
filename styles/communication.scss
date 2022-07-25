@@ -12,8 +12,8 @@
     justify-content: space-between;
   }
   &__subtitle {
-    color: #0189d1;
     margin-bottom: 17px;
+    color: #0189d1;
 
     @include for-large {
       margin-bottom: 24px;
@@ -27,9 +27,9 @@
   }
 
   &__title {
+    margin-bottom: 18px;
     font-size: 40px;
     line-height: 40px;
-    margin-bottom: 18px;
 
     @include for-large {
       margin-bottom: 30px;
@@ -46,35 +46,36 @@
 
   &__btn {
     margin-bottom: 40px;
+    padding: 0 28px;
   }
 
   &__img {
     text-align: center;
   }
   &__img-phone {
+    margin-bottom: 17px;
     width: 290px;
     height: 291px;
-    margin-bottom: 17px;
 
     @include for-large {
+      margin-bottom: 17px;
       width: 425px;
       height: 426px;
-      margin-bottom: 17px;
     }
   }
 
   &__img-description {
+    margin-bottom: 40px;
     font-size: 14px;
     line-height: 22px;
     opacity: 0.6;
-    margin-bottom: 40px;
   }
 
   &__line {
+    margin-bottom: 33px;
     width: 150px;
     border-top: 1px solid #000;
     opacity: 0.1;
-    margin-bottom: 33px;
     @include for-large {
       margin-bottom: 41px;
     }

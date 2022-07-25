@@ -6,22 +6,23 @@
 
   &__top {
     display: flex;
-    flex-direction: column;
     margin-bottom: 59px;
+    flex-direction: column;
     @include for-large {
       flex-direction: row;
     }
   }
 
   &__logo {
+    margin-bottom: 31px;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 31px;
+   
     @include for-large {
-      flex-direction: row;
-      align-items: flex-start;
       margin-bottom: 26px;
       height: 60px;
+      flex-direction: row;
+      align-items: flex-start;
     }
   }
 
@@ -37,14 +38,16 @@
 
   &__logo-text {
     text-align: center;
+   
     @include for-large {
-      text-align: left;
       margin-left: 15px;
+      text-align: left;
     }
   }
 
   &__logo-name {
     margin-bottom: 5px;
+   
     @include for-large {
       margin-bottom: 0;
     }
@@ -61,9 +64,9 @@
     @include for-large {
       display: block;
       margin-bottom: 13px;
+      width: 100vw;
       border-bottom: 1px solid #2b292d;
       opacity: 0.1;
-      width: 100vw;
     }
   }
 
@@ -71,19 +74,19 @@
     margin: 0 15px;
     @include for-large {
       display: flex;
-      justify-content: space-between;
-      width: 100%;
-      height: 22px;
       margin: 0;
       margin-bottom: 15px;
+      width: 100%;
+      height: 22px;
+      justify-content: space-between;
     }
   }
 
   &__links-terms {
     display: flex;
-    justify-content: space-between;
-    width: 180px;
     margin-bottom: 31px;
+    width: 180px;
+    justify-content: space-between;
   }
 
   &__terms-link {
@@ -154,9 +157,9 @@
   &__column {
     margin-bottom: 30px;
     @include for-large {
-      width: 265px;
-      margin-left: 29px;
       margin-bottom: 0;
+      margin-left: 29px;
+      width: 265px;
     }
     &:first-child {
       @include for-large {
@@ -166,9 +169,9 @@
   }
 
   &__title {
+    margin-bottom: 18px;
     font-size: 22px;
     line-height: 28px;
-    margin-bottom: 18px;
   }
 
   &__list-link {

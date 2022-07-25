@@ -36,7 +36,7 @@
 
   &__link {
     @include for-large {
-      font-weight: 700;
+      font-weight: bold;
       font-size: 22px;
       line-height: 26px;
       color: #3142c6;
@@ -60,18 +60,18 @@
 
   &__advantage {
     @include for-large {
+      margin-top: 10px;
       max-width: 459px;
       font-size: 18px;
       line-height: 26px;
-      margin-top: 10px;
     }
 
     &::after {
       @include for-large {
         display: block;
+        margin-top: 18px;
         content: '';
         border-top: 3px solid #3142c6;
-        margin-top: 18px;
       }
     }
   }

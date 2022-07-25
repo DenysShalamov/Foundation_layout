@@ -1,6 +1,6 @@
 .about {
-  background-color: #f4f5f7;
   padding: 46px 0;
+  background-color: $about-bg-hover;
 
   @include for-large {
     padding: 0;
@@ -20,22 +20,23 @@
   }
 
   &__column {
+    margin: 0 15px;
     font-size: 22px;
     line-height: 32px;
-    margin: 0 15px;
 
     &:first-child {
       margin-bottom: 20px;
 
       @include for-large {
         margin-right: 29px;
+        margin-bottom: 0;
       }
     }
   }
 
   &__column-title {
-    font-weight: 700;
     margin-bottom: 6px;
+    font-weight: bold;
 
     @include for-large {
       margin-bottom: 6px;

@@ -18,16 +18,16 @@
     }
   }
   &__title {
+    margin-bottom: 24px;
     font-size: 50px;
     line-height: 50px;
     letter-spacing: -0.3125px;
-    margin-bottom: 24px;
 
     @include for-large {
+      margin-bottom: 34px;
       font-size: 80px;
       line-height: 78px;
       letter-spacing: -0.5px;
-      margin-bottom: 34px;
     }
   }
 
@@ -35,8 +35,8 @@
     margin-bottom: 30px;
 
     @include for-large {
-      width: 456px;
       margin-bottom: 58px;
+      width: 456px;
     }
   }
 
@@ -48,7 +48,7 @@
   }
 
   &__btn {
-    width: 100%;
+    padding: 0 28px;
     &:first-child {
       margin-bottom: 15px;
     }

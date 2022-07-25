@@ -1,8 +1,8 @@
 .header-content {
   display: flex;
-  justify-content: space-between;
-  height: 64px;
   margin-left: 15px;
+  height: 64px;
+  justify-content: space-between;
 
   @include for-large {
     height: 62px;
@@ -22,6 +22,7 @@
     @include for-large {
       display: block;
       margin-left: 56px;
+      padding: 0 28px;
     }
   }
 
@@ -71,7 +72,7 @@
       padding: 0 25px;
       font-size: 18px;
       line-height: 25px;
-      color: #2b292d;
+      color: $nav-color-text;
       cursor: pointer;
     }
 
@@ -80,7 +81,7 @@
     }
     &_selected {
       @include for-large {
-        font-weight: 700;
+        font-weight: bold;
       }
     }
   }
@@ -89,12 +90,12 @@
     @include for-large {
       display: inline-block;
       background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 8px;
-      height: 5px;
       margin-left: 11px;
       margin-bottom: 3px;
+      width: 8px;
+      height: 5px;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 }

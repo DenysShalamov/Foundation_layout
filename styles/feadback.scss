@@ -7,8 +7,8 @@
   }
 
   &__subtitle {
-    color: #3142c6;
     margin-bottom: 29px;
+    color: #3142c6;
   }
 
   &__img {
@@ -22,12 +22,14 @@
 
 .slider {
   margin-bottom: 40px;
+  
   @include for-large {
     text-align: center;
   }
   &__quote {
     padding: 0;
     border: none;
+    
     @include for-large {
       display: flex;
       flex-direction: column;
@@ -42,18 +44,19 @@
     }
   }
   &__text {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 34px;
+    
     @include for-large {
       max-width: 750px;
     }
-    font-size: 24px;
-    line-height: 34px;
-    margin-bottom: 32px;
   }
 }
 
 .slider-dots {
-  text-align: center;
   margin-bottom: 40px;
+  text-align: center;
 
   &__dot {
     display: inline-block;

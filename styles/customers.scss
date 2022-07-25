@@ -15,17 +15,17 @@
 
   @include for-large {
     display: flex;
+    height: 75px;
     justify-content: space-between;
     align-items: center;
-    height: 75px;
   }
 
   &__wrap {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 107px;
     height: 94px;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #E3E3E3;
 
     @include for-large {
