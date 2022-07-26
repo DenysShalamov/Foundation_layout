@@ -1,3 +1,122 @@
+.action-btn {
+  width: 100%;
+  height: 48px;
+  background-color: #3040C4;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.action-btn:hover {
+  background-color: #0c58d3;
+}
+@media screen and (min-width: 1000px) {
+  .action-btn {
+    width: auto;
+  }
+}
+
+.about-btn {
+  width: 100%;
+  height: 48px;
+  color: #3040C4;
+  background-color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+.about-btn:hover {
+  background-color: #F4F5F7;
+}
+@media screen and (min-width: 1000px) {
+  .about-btn {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+}
+
+.content {
+  width: 100%;
+  margin: auto;
+}
+@media screen and (min-width: 1000px) {
+  .content {
+    width: 1140px;
+  }
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.description {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+}
+
+.logo {
+  display: flex;
+}
+.logo__link {
+  cursor: pointer;
+}
+.logo__img {
+  margin-right: 13px;
+  width: 48px;
+  height: 48px;
+}
+@media screen and (min-width: 1000px) {
+  .logo__img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo__name {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: bold;
+}
+@media screen and (min-width: 1000px) {
+  .logo__description {
+    display: inline;
+    font-size: 18px;
+    line-height: 25px;
+    opacity: 0.6;
+  }
+}
+
+.img-description {
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(43, 41, 45, 0.6);
+}
+
 .header-content {
   display: flex;
   margin-left: 15px;
@@ -480,6 +599,14 @@
   align-items: center;
   border: 1px solid #E3E3E3;
 }
+.labels__wrap:nth-child(4) .labels__img {
+  transform: scale(0.6);
+}
+@media screen and (min-width: 1000px) {
+  .labels__wrap:nth-child(4) .labels__img {
+    transform: scale(1);
+  }
+}
 @media screen and (min-width: 1000px) {
   .labels__wrap {
     border: none;
@@ -487,7 +614,7 @@
 }
 .labels__img {
   filter: brightness(0);
-  transform: scale(0.5);
+  transform: scale(0.8);
 }
 @media screen and (min-width: 1000px) {
   .labels__img {
@@ -711,6 +838,7 @@
   width: 100%;
   height: 48px;
   border: 1px solid rgba(43, 41, 45, 0.2);
+  text-align: center;
 }
 @media screen and (min-width: 1000px) {
   .order-content__input-email {
@@ -1332,113 +1460,6 @@ figure {
 
 .page {
   width: 100%;
-}
-
-.action-btn {
-  height: 48px;
-  background-color: #3040C4;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-}
-.action-btn:hover {
-  background-color: #0c58d3;
-}
-
-.about-btn {
-  height: 48px;
-  color: #3040C4;
-  background-color: #fff;
-  border: none;
-  border-radius: 2px;
-  font-weight: bold;
-  font-size: 18px;
-  cursor: pointer;
-}
-.about-btn:hover {
-  background-color: #F4F5F7;
-}
-
-@media screen and (min-width: 1000px) {
-  .page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-}
-
-.content {
-  width: 100%;
-  margin: auto;
-}
-@media screen and (min-width: 1000px) {
-  .content {
-    width: 1140px;
-  }
-}
-
-.subtitle {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 34px;
-}
-
-.description {
-  font-size: 24px;
-  line-height: 34px;
-}
-
-.title {
-  font-weight: bold;
-  font-size: 56px;
-  line-height: 56px;
-  letter-spacing: -0.5px;
-}
-
-.logo {
-  display: flex;
-}
-.logo__link {
-  cursor: pointer;
-}
-.logo__img {
-  margin-right: 13px;
-  width: 48px;
-  height: 48px;
-}
-@media screen and (min-width: 1000px) {
-  .logo__img {
-    width: 60px;
-    height: 60px;
-  }
-}
-.logo__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.logo__name {
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: bold;
-}
-@media screen and (min-width: 1000px) {
-  .logo__description {
-    display: inline;
-    font-size: 18px;
-    line-height: 25px;
-    opacity: 0.6;
-  }
-}
-
-.img-description {
-  text-align: center;
-  font-size: 14px;
-  line-height: 22px;
-  color: rgba(43, 41, 45, 0.6);
 }
 
 /*# sourceMappingURL=styles.css.map */
